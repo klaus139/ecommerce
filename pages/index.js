@@ -1,24 +1,24 @@
-import React from 'react'
+import React from "react";
 
-const Home = () => {
-  return (
-    <>
-    HeroBanner
+import { client } from "../lib/client";
 
-    <div>
+import { Product, FooterBanner, HeroBanner } from "../components";
+
+const Home = () => (
+  <div>
+    <HeroBanner />
+
+    <div className="products-heading">
       <h2>Best Selling Products</h2>
       <p>Speakers of many variations</p>
     </div>
 
-    <div>
-      {['product 1', 'product 2', 'product 3'].map(
-        (product) => product)}
-      )
+    <div className="products-container">
+      {["product 1", "product 2", "product 3"].map((product) => product)}
     </div>
 
-    Footer
-    </>
-  )
-}
+    <FooterBanner />
+  </div>
+);
 
-export default Home
+export default Home;
