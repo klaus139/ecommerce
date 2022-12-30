@@ -13,7 +13,7 @@ import getStripe from '../lib/getStripe';
 const Cart = () => {
   const cartRef = useRef();
   const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuantity, onRemove } = useStateContext();
-  
+
   const handleCheckout = async() => {
     const stripe = await getStripe();
 
@@ -81,7 +81,7 @@ const Cart = () => {
                       onClick={() => toggleCartItemQuantity(item._id, 'dec')}>
                         <AiOutlineMinus />
                       </span>
-                      <span className="num" onClick=''>{item.quantity}</span>
+                      <span className="num">{item.quantity}</span>
                       <span className="plus" onClick={() => toggleCartItemQuantity(item._id, 'inc')}>
                         <AiOutlinePlus />
                       </span>
