@@ -65,8 +65,9 @@ width: 100%;
     margin-left: 6px;
 }
 .logo{
-  color: gray;
+  color: grey;
   font-size: 18px;
+  font-weight: bolder;
 
 }
 .cart-icon{
@@ -421,6 +422,10 @@ padding: 30px 65px;
  margin-top: 60px;
  color: #324d67;
 
+}
+.dev{
+  font-size: 7px;
+  color: grey
 }
 
 .product-detail-image{

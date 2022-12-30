@@ -9,7 +9,7 @@ const Footer = () => {
         <AiFillInstagram />
         <AiOutlineTwitter />
       </p>
-      <p>Developed by Klaus</p>
+      <p className='dev'>Developed by Klaus</p>
     </div>
   )
 }
