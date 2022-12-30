@@ -38,9 +38,18 @@ export const StateContext = ({children}) => {
 
     }
 
+    const onRemove = (product) => {
+        foundProduct = cartItems.find((item) => item._id === product._id);
+        const newCartItems = cartItems.filter((item) => item._id !== product._id);
+
+        setTotalPrice((prevTotalPrice)=> 
+        prevTotalPrice - foundProduct.price * foundProduct.quantity);
+        setCartItems(newCartItems);
+
+    }
     
   const toggleCartItemQuantity = (id, value) => {
-    foundProduct = cartItems.find((item) => item._id === id)
+    foundProduct = cartItems.find((item) => item._id === id);
     index = cartItems.findIndex((product) => product._id === id);
     const newCartItems = cartItems.filter((item) => item._id !== id)
 
@@ -81,7 +90,8 @@ export const StateContext = ({children}) => {
             incQty,
             decQty,
             onAdd,
-            toggleCartItemQuantity
+            toggleCartItemQuantity,
+            onRemove
         }}
         >
             {children}
