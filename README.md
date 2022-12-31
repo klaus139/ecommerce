@@ -1,5 +1,5 @@
 This is a [Next.js] Porject built with sanity and stripe
-This webApp has been hosted on https://www.k-market.vercel.app
+This webApp has been hosted on https://www.klamark.adaptable.app
 
 ## Getting Started
 cd ecommerce
@@ -14,6 +14,8 @@ npm run dev
 Stripe payment is integrated although in test mode. 
 Snity is used as a content management admin side
 Next Js is used as a backend endpoint.
+
+
 
 ![Alt text](https://user-images.githubusercontent.com/70088342/160780701-7bb38a57-76bd-49a2-a4ec-49f89c50a7c7.png)
 
